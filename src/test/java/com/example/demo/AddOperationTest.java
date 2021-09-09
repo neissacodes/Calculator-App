@@ -26,7 +26,7 @@ public class AddOperationTest {
 
       double result = uut.addOperation(3,5,8);
 
-      assertEquals(result, uut.addOperation(3,5,8));
+      assertEquals(result, 16);
 
    }
 
