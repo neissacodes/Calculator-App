@@ -4,9 +4,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SubOperation {
-    private double num1;
-    private double num2;
-    private double num3;
+    private double num1=3;
+    private double num2=5;
+    private double num3=8;
 
     public double getNum1() {
         return num1;

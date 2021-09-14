@@ -1,19 +1,19 @@
 package com.example.demo;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Testing Multiply Class")
 class MultOperationTest {
-    private double num1;
-    private double num2;
-    private double num3;
 
     @Test
     public void mult_operationTest() {
         MultOperation uut = new MultOperation();
 
-        double result = uut.multOperation(3,5,8);
+        double result = uut.multOperation(uut.getNum1(), uut.getNum2(), uut.getNum3());
 
         assertEquals(result, 120);
     }
